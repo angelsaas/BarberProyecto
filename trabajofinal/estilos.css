@@ -1,0 +1,202 @@
+/* Reset de estilos */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de la cabecera */
+header {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    color: #800080;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #800080;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3d3a6d;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* Estilos del contenido principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+aside {
+    width: 30%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #800080;
+}
+
+.contact-bar {
+    margin-bottom: 20px;
+}
+
+.trend-cuts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trend-cuts h2 {
+    margin-bottom: 20px;
+    color: #800080;
+}
+
+.trend-cuts a {
+    margin-bottom: 10px;
+    color: #800080;
+    text-decoration: none;
+}
+
+.trend-cuts a:hover {
+    text-decoration: underline;
+    animation: slide-in-top 0.3s both;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 150px;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.image-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.image-list ul {
+    flex-basis: calc(50% - 5px);
+    list-style: none;
+    padding: 0;
+}
+
+.image-list li {
+    margin-bottom: 10px;
+}
+
+.image-list img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-list img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el formulario de agendar cita */
+h1 {
+    text-align: center;
+    color: #800080;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #800080;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #800080;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #800080;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+select option {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: #d7d2e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el campo de fecha y hora */
+input[type="datetime-local"] {
+    /* ... otros estilos ... */
+    appearance: none;
+    background-image: url("ruta-a-icono-calendario.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 25px;
+    padding-right: 35px;
+}
